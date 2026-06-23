@@ -158,26 +158,26 @@ export default function Hero() {
               <div className="p-5">
                 <div className="grid grid-cols-2 gap-4 mb-5">
                   <div className="bg-bg-mid border border-border-subtle rounded-xl p-4">
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-text-lo">
+                    <div className="text-xs font-bold uppercase tracking-wider text-text-lo">
                       Donors Synced
                     </div>
                     <div className="text-2xl font-serif text-text-hi mt-1 font-medium">
                       {counterDonor}
                       <span className="text-brand-teal text-sm ml-0.5">+</span>
                     </div>
-                    <span className="text-[9px] font-extrabold text-green-800 bg-green-100 px-2.5 py-1 rounded-full mt-2 inline-block">
+                    <span className="text-xs font-semibold text-green-800 bg-green-100 px-2.5 py-1 rounded-full mt-2 inline-block">
                       ↑ +18% vs last year
                     </span>
                   </div>
 
                   <div className="bg-bg-mid border border-border-subtle rounded-xl p-4">
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-text-lo">
+                    <div className="text-xs font-bold uppercase tracking-wider text-text-lo">
                       Failures Recovered
                     </div>
                     <div className="text-2xl font-serif text-text-hi mt-1 font-medium">
                       ${counterRaised}
                     </div>
-                    <span className="text-[9px] font-extrabold text-green-800 bg-green-100 px-2.5 py-1 rounded-full mt-2 inline-block">
+                    <span className="text-xs font-semibold text-green-800 bg-green-100 px-2.5 py-1 rounded-full mt-2 inline-block">
                       Saved this Qtr
                     </span>
                   </div>
@@ -186,10 +186,10 @@ export default function Hero() {
                 {/* Micro Bar Chart */}
                 <div className="mb-5 bg-bg-mid/40 border border-border-subtle/50 rounded-xl p-4">
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-text-lo">
+                    <span className="text-xs font-bold uppercase tracking-wider text-text-lo">
                       12-Month Giving Cycle
                     </span>
-                    <span className="text-[10px] font-extrabold text-green-800 tracking-wider bg-green-100 px-2.5 py-1 rounded">
+                    <span className="text-xs font-bold text-green-800 tracking-wider bg-green-100 px-2.5 py-1 rounded">
                       Ramadan Spike ↗
                     </span>
                   </div>
@@ -239,14 +239,14 @@ export default function Hero() {
                           <div className="text-xs font-bold text-text-hi leading-normal">
                             {donor.name}
                           </div>
-                          <div className="text-[10px] text-text-lo tracking-wide">
+                          <div className="text-xs text-text-lo tracking-wide">
                             {donor.desc}
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-bold font-mono text-text-hi">{donor.amount}</span>
-                        <span className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${donor.tagClass}`}>
+                        <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${donor.tagClass}`}>
                           {donor.status}
                         </span>
                       </div>
@@ -270,7 +270,7 @@ export default function Hero() {
                 <span className="text-xs font-bold text-text-hi block">
                   Ramadan campaign triggered
                 </span>
-                <span className="text-[10px] text-text-md leading-normal block mt-0.5">
+                <span className="text-xs text-text-md leading-normal block mt-0.5">
                   47 inactive donors reactivated automatically.
                 </span>
               </div>

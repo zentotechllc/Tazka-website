@@ -109,7 +109,7 @@ export default function InteractiveShowcase() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-text-hi leading-tight">
               Community projects <em className="text-brand-teal">powered by Tazka.</em>
             </h2>
-            <p className="text-text-md text-sm sm:text-base mt-2 max-w-xl">
+            <p className="text-text-md text-base sm:text-lg mt-2 max-w-xl">
               Take a look at how Masjids, Islamic schools, and charities use Tazka to solve donor churn. Heavily inspired by high-end design showcases.
             </p>
           </div>
@@ -156,16 +156,16 @@ export default function InteractiveShowcase() {
                     <span className="text-[2.5rem] select-none block shrink-0">
                       {proj.emoji}
                     </span>
-                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-text-md bg-bg-deep border border-border-subtle px-2.5 py-1 rounded-full">
+                    <span className="text-xs font-bold uppercase tracking-widest text-text-md bg-bg-deep border border-border-subtle px-2.5 py-1 rounded-full">
                       {proj.location}
                     </span>
                   </div>
 
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-brand-teal mb-2 block">
+                  <span className="text-xs font-bold uppercase tracking-widest text-brand-teal mb-2 block">
                     {proj.typeLabel}
                   </span>
 
-                  <h3 className="text-base font-bold text-text-hi line-clamp-2 leading-snug mb-4 group-hover:text-brand-teal transition-colors">
+                  <h3 className="text-lg font-bold text-text-hi line-clamp-2 leading-snug mb-4 group-hover:text-brand-teal transition-colors">
                     {proj.name}
                   </h3>
 
@@ -178,24 +178,24 @@ export default function InteractiveShowcase() {
                 <div className="pt-4 border-t border-border-subtle/60">
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     <div>
-                      <div className="text-[9px] font-bold uppercase tracking-wider text-text-lo">
+                      <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-lo">
                         Retention Rate
                       </div>
-                      <div className="text-lg font-serif text-brand-teal font-medium">
+                      <div className="text-xl font-serif text-brand-teal font-semibold">
                         {proj.metrics.retentionRate}%
                       </div>
                     </div>
                     <div>
-                      <div className="text-[9px] font-bold uppercase tracking-wider text-text-lo">
+                      <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-text-lo">
                         Recovered Fails
                       </div>
-                      <div className="text-lg font-serif text-text-hi font-medium">
+                      <div className="text-xl font-serif text-text-hi font-semibold">
                         ${proj.metrics.recoveredAmount.toLocaleString()}
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-text-hi group-hover:text-brand-teal transition-colors pt-2 border-t border-border-subtle/30">
+                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-text-hi group-hover:text-brand-teal transition-colors pt-2 border-t border-border-subtle/30">
                     See Case Study
                     <ChevronRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -235,7 +235,7 @@ export default function InteractiveShowcase() {
                 <div className="flex items-center gap-3 sm:gap-4 mb-6">
                   <span className="text-4xl select-none">{selectedProj.emoji}</span>
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-text-md bg-bg-mid px-2.5 py-1 rounded-full">
+                    <span className="text-xs font-bold uppercase tracking-widest text-text-md bg-bg-mid px-2.5 py-1 rounded-full">
                       {selectedProj.location}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-serif text-text-hi mt-1">
@@ -251,60 +251,60 @@ export default function InteractiveShowcase() {
                 {/* Key Metrics Columns */}
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-5 rounded-2xl bg-bg-mid border border-border-subtle mb-8 text-center sm:text-left">
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-text-lo">
+                    <span className="text-xs font-bold uppercase tracking-wider text-text-lo">
                       Retention with Tazka
                     </span>
                     <div className="text-3xl font-serif text-brand-teal font-medium mt-1">
                       {selectedProj.metrics.retentionRate}%
                     </div>
-                    <span className="text-[10px] text-text-lo">
+                    <span className="text-xs text-text-lo">
                       from {selectedProj.metrics.initialRetention}% baseline
                     </span>
                   </div>
 
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-text-lo">
+                    <span className="text-xs font-bold uppercase tracking-wider text-text-lo">
                       Failure Recovery Saved
                     </span>
                     <div className="text-3xl font-serif text-text-hi font-medium mt-1">
                       ${selectedProj.metrics.recoveredAmount.toLocaleString()}
                     </div>
-                    <span className="text-[10px] text-text-md font-bold">
+                    <span className="text-xs text-text-md font-bold">
                       Directly salvaged
                     </span>
                   </div>
 
                   <div className="col-span-2 md:col-span-1">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-text-lo">
+                    <span className="text-xs font-bold uppercase tracking-wider text-text-lo">
                       Active Donors
                     </span>
                     <div className="text-3xl font-serif text-text-hi font-medium mt-1">
                       {selectedProj.metrics.donorCount}+
                     </div>
-                    <span className="text-[10px] text-text-lo">
+                    <span className="text-xs text-text-lo">
                       Sadaqah &amp; Zakat
                     </span>
                   </div>
                 </div>
 
                 {/* Case Study Written Block */}
-                <div className="space-y-6 text-sm mb-8 max-h-80 overflow-y-auto pr-2">
+                <div className="space-y-6 text-base mb-8 max-h-80 overflow-y-auto pr-2">
                   <div>
-                    <h5 className="font-bold uppercase text-[10px] tracking-widest text-brand-teal mb-1">
+                    <h5 className="font-bold uppercase text-xs tracking-widest text-brand-teal mb-1">
                       The Challenge
                     </h5>
                     <p className="text-text-md leading-relaxed">{selectedProj.challenge}</p>
                   </div>
 
                   <div>
-                    <h5 className="font-bold uppercase text-[10px] tracking-widest text-brand-teal mb-1">
+                    <h5 className="font-bold uppercase text-xs tracking-widest text-brand-teal mb-1">
                       The Tazka Solution
                     </h5>
                     <p className="text-text-md leading-relaxed">{selectedProj.solution}</p>
                   </div>
 
                   <div>
-                    <h5 className="font-bold uppercase text-[10px] tracking-widest text-brand-teal mb-1">
+                    <h5 className="font-bold uppercase text-xs tracking-widest text-brand-teal mb-1">
                       The Tazka Lift
                     </h5>
                     <p className="text-text-md leading-relaxed">{selectedProj.lift}</p>

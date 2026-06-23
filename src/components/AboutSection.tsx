@@ -105,7 +105,7 @@ export default function AboutSection() {
               <blockquote className="text-base sm:text-xl font-serif text-text-hi italic leading-relaxed">
                 "The community built the foundation. Now let’s finish what we started together."
               </blockquote>
-              <cite className="text-[10px] font-bold text-text-lo tracking-widest uppercase mt-2.5 block not-italic">
+              <cite className="text-xs font-bold text-text-lo tracking-widest uppercase mt-2.5 block not-italic">
                 — MYC Campaign Core Vision · Columbus, Ohio
               </cite>
             </div>

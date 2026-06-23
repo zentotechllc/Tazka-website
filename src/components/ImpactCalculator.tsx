@@ -64,7 +64,7 @@ export default function ImpactCalculator() {
                     background: `linear-gradient(to right, #0F5E46 0%, #0F5E46 ${((annualDonations - 25000) / 975000) * 100}%, #CBD5E1 ${((annualDonations - 25000) / 975000) * 100}%, #CBD5E1 100%)`
                   }}
                 />
-                <div className="flex justify-between text-[10px] text-text-lo mt-2 font-semibold">
+                <div className="flex justify-between text-xs text-text-lo mt-2 font-semibold">
                   <span>$25,000</span>
                   <span>$500,000</span>
                   <span>$1,000,000</span>
@@ -94,7 +94,7 @@ export default function ImpactCalculator() {
                     background: `linear-gradient(to right, #A16207 0%, #A16207 ${((retentionRate - 10) / 80) * 100}%, #CBD5E1 ${((retentionRate - 10) / 80) * 100}%, #CBD5E1 100%)`
                   }}
                 />
-                <div className="flex justify-between text-[10px] text-text-lo mt-2 font-semibold">
+                <div className="flex justify-between text-xs text-text-lo mt-2 font-semibold">
                   <span>10% (Churby)</span>
                   <span>35% (Masjid National Avg)</span>
                   <span>90% (Elite Retention)</span>
@@ -102,7 +102,7 @@ export default function ImpactCalculator() {
               </div>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-border-subtle/50 text-[11px] text-text-lo leading-relaxed">
+            <div className="mt-8 pt-4 border-t border-border-subtle/50 text-xs text-text-lo leading-relaxed">
               *Calculated based on standard RFM nonprofit giving behaviors and a verified average of 78% retention maintained by Tazka’s automated moon-sighting workflows.
             </div>
           </div>
@@ -120,43 +120,43 @@ export default function ImpactCalculator() {
 
               {/* Box 1: Annual Leakage */}
               <div className="mb-6">
-                <span className="text-[10px] uppercase font-bold tracking-wider text-text-lo flex items-center gap-1">
+                <span className="text-xs uppercase font-bold tracking-wider text-text-lo flex items-center gap-1">
                   Yearly Donor Value Leakage
                 </span>
                 <div className="text-2xl font-serif text-red-700 mt-1 font-bold">
                   -${lostAnnualBaseline.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                 </div>
-                <span className="text-[10px] text-text-lo">
+                <span className="text-xs text-text-lo">
                   Lost annually from incomplete donation follow-up.
                 </span>
               </div>
 
               {/* Box 2: Secure savings with Tazka */}
               <div className="mb-6">
-                <span className="text-[10px] uppercase font-bold tracking-wider text-brand-teal flex items-center gap-1.5">
+                <span className="text-xs uppercase font-bold tracking-wider text-brand-teal flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-brand-teal animate-pulse" />
                   Secured with Tazka (78% Retention)
                 </span>
                 <div className="text-3xl font-serif text-brand-teal mt-1 font-bold">
                   ${tazkaSecured.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                 </div>
-                <span className="text-[10px] text-text-lo">
+                <span className="text-xs text-text-lo">
                   Active donor funds safely retained year-over-year.
                 </span>
               </div>
 
               <div className="h-[1px] bg-border-subtle my-5" />
 
-              {/* Net annual increase */}
+               {/* Net annual increase */}
               <div className="p-4 rounded-xl bg-bg-mid border border-border-subtle">
-                <div className="flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-text-lo">
+                <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-widest text-text-lo">
                   <TrendingUp className="w-3.5 h-3.5 text-brand-teal" />
                   Net Fundraising Gains
                 </div>
                 <div className="text-2xl font-serif text-text-hi mt-1 font-bold">
                   +${netSavingsGain.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                 </div>
-                <span className="text-[10px] text-text-lo mt-1 block leading-relaxed">
+                <span className="text-xs text-text-lo mt-1 block leading-relaxed">
                   Additional Zakat &amp; Sadaqah saved from churn every single year.
                 </span>
               </div>

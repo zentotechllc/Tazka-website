@@ -180,9 +180,9 @@ export default function CalendarSimulator() {
               <div className="relative z-10 flex flex-col h-full pt-8 px-4 pb-4 justify-between">
                 
                 {/* Simulated Phone Top header status */}
-                <div className="flex justify-between items-center text-[10px] text-text-lo font-semibold tracking-wider border-b border-border-subtle/40 pb-2">
+                <div className="flex justify-between items-center text-xs text-text-lo font-semibold tracking-wider border-b border-border-subtle/40 pb-2">
                   <span>Tazka Net</span>
-                  <div className="flex items-center gap-1.5 bg-bg-deep/50 px-2 py-0.5 rounded-full text-[9px]">
+                  <div className="flex items-center gap-1.5 bg-bg-deep/50 px-2 py-0.5 rounded-full text-[11px]">
                     <Moon className="w-2.5 h-2.5 text-brand-teal" />
                     <span>Calculated: 1447 AH</span>
                   </div>
@@ -204,10 +204,10 @@ export default function CalendarSimulator() {
                         <Bell className="w-3.5 h-3.5 text-brand-teal" />
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold text-text-hi block">
+                        <span className="text-xs font-bold text-text-hi block">
                           {current.notifTitle}
                         </span>
-                        <p className="text-[9px] text-text-lo mt-0.5 leading-snug">
+                        <p className="text-xs text-text-lo mt-0.5 leading-snug">
                           {current.notifDesc}
                         </p>
                       </div>
@@ -224,7 +224,7 @@ export default function CalendarSimulator() {
                       transition={{ duration: 0.4 }}
                       className="space-y-1.5"
                     >
-                      <span className="text-[9px] text-text-lo font-bold tracking-widest uppercase pl-1 block">
+                      <span className="text-[11px] text-text-lo font-bold tracking-widest uppercase pl-1 block">
                         SMS appeal delivered
                       </span>
                       <div className="bg-border-strong/90 text-text-hi p-3.5 rounded-2xl rounded-tl-sm text-xs leading-relaxed max-w-[90%] shadow-lg border border-border-strong relative">
@@ -236,7 +236,7 @@ export default function CalendarSimulator() {
 
                 {/* Simulated Phone Bottom Widget */}
                 <div className="bg-bg-deep/70 backdrop-blur border border-border-subtle p-3 rounded-2xl text-center">
-                  <span className="text-[10px] uppercase font-bold text-text-lo tracking-wider block">
+                  <span className="text-xs uppercase font-bold text-text-lo tracking-wider block">
                     Active Lunar Phase
                   </span>
                   <div className="text-xs font-bold text-text-hi mt-1 flex items-center justify-center gap-1.5">

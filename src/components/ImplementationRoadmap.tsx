@@ -68,7 +68,7 @@ export default function ImplementationRoadmap() {
                   }`}
                 >
                   <div className="flex justify-between items-center mb-2">
-                    <span className={`text-[9px] font-extrabold uppercase tracking-widest ${isActive ? "text-brand-teal" : "text-text-lo"}`}>
+                    <span className={`text-[11px] sm:text-xs font-extrabold uppercase tracking-widest ${isActive ? "text-brand-teal" : "text-text-lo"}`}>
                       {st.days}
                     </span>
                     <span className="text-xs">{st.icon}</span>
@@ -103,10 +103,10 @@ export default function ImplementationRoadmap() {
               {/* Left summary info */}
               <div className="md:col-span-8 space-y-4">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-bold uppercase tracking-wider bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-full border border-brand-teal/15">
+                  <span className="text-xs font-bold uppercase tracking-wider bg-brand-teal/10 text-brand-teal px-3 py-1 rounded-full border border-brand-teal/15">
                     {steps[activeStep].days}
                   </span>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-text-lo">
+                  <span className="text-xs font-bold uppercase tracking-wider text-text-lo">
                     Managed by: {steps[activeStep].owner}
                   </span>
                 </div>
@@ -115,7 +115,7 @@ export default function ImplementationRoadmap() {
                   {steps[activeStep].title}
                 </h3>
 
-                <p className="text-text-md text-xs sm:text-sm leading-relaxed">
+                <p className="text-text-md text-sm sm:text-base leading-relaxed">
                   {steps[activeStep].descr}
                 </p>
               </div>
@@ -123,16 +123,16 @@ export default function ImplementationRoadmap() {
               {/* Right deliverable details */}
               <div className="md:col-span-4 bg-bg-mid/90 p-5 rounded-2xl border border-border-subtle flex flex-col justify-between h-full min-h-[170px]">
                 <div>
-                  <span className="text-[9px] uppercase font-bold tracking-widest text-text-lo flex items-center gap-1.5 mb-2.5">
+                  <span className="text-xs uppercase font-bold tracking-widest text-text-lo flex items-center gap-1.5 mb-2.5">
                     <ListTodo className="w-3.5 h-3.5 text-brand-teal" />
                     Key Deliverable
                   </span>
-                  <p className="text-xs font-bold text-text-hi leading-relaxed">
+                  <p className="text-xs sm:text-sm font-bold text-text-hi leading-relaxed">
                     {steps[activeStep].deliverable}
                   </p>
                 </div>
 
-                <div className="border-t border-border-subtle/60 pt-4.5 mt-4 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-brand-teal">
+                <div className="border-t border-border-subtle/60 pt-4.5 mt-4 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-brand-teal">
                   <span>Week {activeStep + 1} Pipeline</span>
                   <ChevronRight className="w-3.5 h-3.5" />
                 </div>

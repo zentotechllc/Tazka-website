@@ -87,13 +87,13 @@ export default function PricingTable() {
             >
               {/* Popular badge */}
               {p.isPopular && (
-                <span className="absolute top-0 right-0 bg-brand-teal text-white text-[9px] font-extrabold uppercase tracking-widest px-4.5 py-1.5 rounded-bl-xl shadow-sm">
+                <span className="absolute top-0 right-0 bg-brand-teal text-white text-[11px] sm:text-xs font-bold uppercase tracking-widest px-4.5 py-1.5 rounded-bl-xl shadow-sm">
                   Most Popular
                 </span>
               )}
 
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-text-lo">
+                <span className="text-xs font-bold uppercase tracking-widest text-text-lo">
                   {p.name}
                 </span>
 

@@ -33,7 +33,7 @@ export default function PilotSection() {
               <blockquote className="text-sm font-serif text-text-hi italic leading-relaxed">
                 "We had hundreds of generous donors from our annual dinners, but we kept forgetting to keep them updated on milestones. Tazka changed everything within weeks of linking."
               </blockquote>
-              <cite className="text-[10px] font-bold text-text-lo tracking-widest uppercase mt-2 block not-italic">
+              <cite className="text-xs font-bold text-text-lo tracking-widest uppercase mt-2 block not-italic">
                 — Imam Jamil Shakir · MYC Columbus, OH
               </cite>
             </div>
@@ -57,10 +57,10 @@ export default function PilotSection() {
               className="bg-bg-card border border-border-strong rounded-3xl p-6 sm:p-8 shadow-2xl relative"
             >
               <div className="flex justify-between items-center mb-6 pb-4 border-b border-border-subtle/50">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-text-lo">
+                <span className="text-xs font-bold uppercase tracking-widest text-text-lo">
                   MYC Live Campaign Metrics
                 </span>
-                <span className="text-[10px] uppercase font-bold text-brand-teal tracking-widest bg-brand-teal/10 px-2.5 py-1 rounded-full flex items-center gap-1.5 animate-pulse">
+                <span className="text-xs uppercase font-bold text-brand-teal tracking-widest bg-brand-teal/10 px-2.5 py-1 rounded-full flex items-center gap-1.5 animate-pulse">
                   <span className="w-1 h-1 bg-brand-teal rounded-full" />
                   Active retention live
                 </span>
@@ -69,7 +69,7 @@ export default function PilotSection() {
               {/* Counts Grid */}
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-bg-mid border border-border-subtle p-4 rounded-xl">
-                  <span className="text-[9px] uppercase font-bold tracking-wider text-text-lo">
+                  <span className="text-xs uppercase font-bold tracking-wider text-text-lo">
                     Total Invested
                   </span>
                   <div className="text-xl sm:text-2xl font-serif text-text-hi font-medium mt-1">
@@ -78,7 +78,7 @@ export default function PilotSection() {
                 </div>
 
                 <div className="bg-bg-mid border border-border-subtle p-4 rounded-xl">
-                  <span className="text-[9px] uppercase font-bold tracking-wider text-text-lo">
+                  <span className="text-xs uppercase font-bold tracking-wider text-text-lo">
                     Remaining Target
                   </span>
                   <div className="text-xl sm:text-2xl font-serif text-text-hi font-medium mt-1">
@@ -87,7 +87,7 @@ export default function PilotSection() {
                 </div>
 
                 <div className="bg-bg-mid border border-border-subtle p-4 rounded-xl">
-                  <span className="text-[9px] uppercase font-bold tracking-wider text-text-lo">
+                  <span className="text-xs uppercase font-bold tracking-wider text-text-lo">
                     Integrated Donors
                   </span>
                   <div className="text-xl sm:text-2xl font-serif text-text-hi font-medium mt-1">
@@ -96,7 +96,7 @@ export default function PilotSection() {
                 </div>
 
                 <div className="bg-bg-mid border border-border-subtle p-4 rounded-xl">
-                  <span className="text-[9px] uppercase font-bold tracking-wider text-text-lo">
+                  <span className="text-xs uppercase font-bold tracking-wider text-text-lo">
                     Donor Retention Rate
                   </span>
                   <div className="text-xl sm:text-2xl font-serif text-brand-teal font-medium mt-1">
@@ -109,7 +109,7 @@ export default function PilotSection() {
               <div className="space-y-4">
                 {/* Progress bar 1 */}
                 <div>
-                  <div className="flex justify-between text-[10px] font-bold uppercase tracking-wide text-text-lo mb-1.5">
+                  <div className="flex justify-between text-xs font-bold uppercase tracking-wide text-text-lo mb-1.5">
                     <span>Building Fund Progress</span>
                     <span className="text-text-hi">57%</span>
                   </div>
@@ -126,7 +126,7 @@ export default function PilotSection() {
 
                 {/* Progress bar 2 */}
                 <div>
-                  <div className="flex justify-between text-[10px] font-bold uppercase tracking-wide text-text-lo mb-1.5">
+                  <div className="flex justify-between text-xs font-bold uppercase tracking-wide text-text-lo mb-1.5">
                     <span>Donor Retention Rate</span>
                     <span className="text-brand-teal">78%</span>
                   </div>
@@ -143,7 +143,7 @@ export default function PilotSection() {
 
                 {/* Progress bar 3 */}
                 <div>
-                  <div className="flex justify-between text-[10px] font-bold uppercase tracking-wide text-text-lo mb-1.5">
+                  <div className="flex justify-between text-xs font-bold uppercase tracking-wide text-text-lo mb-1.5">
                     <span>Lapsed Donors Reached</span>
                     <span className="text-text-hi">34%</span>
                   </div>
