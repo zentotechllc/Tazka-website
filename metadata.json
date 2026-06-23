@@ -1,0 +1,6 @@
+{
+  "name": "Tazka",
+  "description": "A high-end donor retention platform and automated lunar lifecycle system built for Muslim nonprofits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

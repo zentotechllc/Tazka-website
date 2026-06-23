@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-teal: #0A7E5C; /* Stronger premium executive green (highly readable, professional) */
+  --color-brand-teal-dk: #06543D; /* Rich deep velvet pine green */
+  --color-brand-saffron: #A16207; /* Clear, rich contrast bronze-amber */
+  --color-bg-deep: #F8FAFC; /* Crisp bright warm slate */
+  --color-bg-mid: #F1F5F9; /* Professional slate gray barrier background */
+  --color-bg-card: #FFFFFF; /* Perfect solid white for card containers */
+  --color-bg-card2: #EDF2F7; /* Solid secondary soft light gray */
+  --color-border-subtle: #E2E8F0; /* Clean distinct outline separating elements */
+  --color-stronger-border: #94A3B8; /* High legibility border line */
+  --color-border-strong: #CBD5E1; /* Solid responsive line separating columns */
+  --color-text-hi: #0F172A; /* Absolute charcoal black for high contrast reading */
+  --color-text-md: #334155; /* Executive slate black for high contrast body copy */
+  --color-text-lo: #475569; /* Balanced crisp gray for helper labels */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-deep);
+  color: var(--color-text-hi);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-mid);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-teal);
+}
+
+.glow-drift-1 {
+  animation: glow-drift 12s ease-in-out infinite alternate;
+}
+
+.glow-drift-2 {
+  animation: glow-drift-reverse 15s ease-in-out infinite alternate;
+}
+
+@keyframes glow-drift {
+  0% { transform: scale(1) translate(0, 0); opacity: 0.15; }
+  100% { transform: scale(1.15) translate(3%, 4%); opacity: 0.3; }
+}
+
+@keyframes glow-drift-reverse {
+  0% { transform: scale(1.1) translate(0, 0); opacity: 0.15; }
+  100% { transform: scale(0.95) translate(-4%, -2%); opacity: 0.25; }
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(15, 94, 70, 0.05) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 94, 70, 0.12);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
