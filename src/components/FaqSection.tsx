@@ -45,7 +45,7 @@ export default function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-bg-deep select-none">
+    <section id="faq" className="py-36 lg:py-40 bg-bg-deep select-none">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -56,7 +56,7 @@ export default function FaqSection() {
           <h2 className="text-3xl sm:text-4xl font-serif text-text-hi leading-none mb-4">
             Common <em className="text-brand-teal">Questions.</em>
           </h2>
-          <p className="text-text-md text-sm sm:text-base mt-2 max-w-lg mx-auto">
+          <p className="text-text-md text-lg sm:text-xl md:text-2xl mt-2 leading-relaxed max-w-2xl mx-auto">
             Everything you need to understand about our retention tech, fund routing, and lunar automation.
           </p>
         </div>

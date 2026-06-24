@@ -34,7 +34,7 @@ export default function Footer() {
             <h3 className="text-xl font-serif text-text-hi font-bold flex items-center gap-1.5">
               Tazka<span className="text-brand-teal font-sans">.</span>
             </h3>
-            <p className="text-xs text-text-md leading-relaxed max-w-sm">
+            <p className="text-sm text-text-md leading-relaxed max-w-sm">
               Donor retention, automated lunar campaigns, and credit card failure recovery pipelines built specifically for US Muslim nonprofits. A technical product of Zento Tech LLC, Columbus, Ohio.
             </p>
             

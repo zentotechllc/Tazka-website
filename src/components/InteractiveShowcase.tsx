@@ -15,7 +15,7 @@ export default function InteractiveShowcase() {
       location: "Columbus, OH",
       category: "masjid",
       typeLabel: "Masjid & Community Hub",
-      headline: "Finishing a $4.7M community building through systematic lunar retargeting.",
+      headline: "Finishing a $4.7M community building through systematic Lunar Nurturing Pipelines.",
       metrics: {
         retentionRate: 78,
         initialRetention: 35,
@@ -97,7 +97,7 @@ export default function InteractiveShowcase() {
   );
 
   return (
-    <section id="projects" className="py-24 bg-bg-mid relative">
+    <section id="projects" className="py-36 lg:py-40 bg-bg-mid relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -109,7 +109,7 @@ export default function InteractiveShowcase() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-text-hi leading-tight">
               Community projects <em className="text-brand-teal">powered by Tazka.</em>
             </h2>
-            <p className="text-text-md text-base sm:text-lg mt-2 max-w-xl">
+            <p className="text-text-md text-lg sm:text-xl md:text-2xl mt-2 max-w-2xl">
               Take a look at how Masjids, Islamic schools, and charities use Tazka to solve donor churn. Heavily inspired by high-end design showcases.
             </p>
           </div>

@@ -21,7 +21,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-bg-mid relative">
+    <section id="contact" className="py-36 lg:py-40 bg-bg-mid relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 items-start max-w-5xl mx-auto">
           
@@ -33,7 +33,7 @@ export default function ContactForm() {
             <h2 className="text-3xl sm:text-4xl font-serif text-text-hi leading-tight">
               Ready to stop <em className="text-brand-teal">losing donors?</em>
             </h2>
-            <p className="text-text-md text-base leading-relaxed mb-8">
+            <p className="text-text-md text-lg sm:text-xl md:text-2xl leading-relaxed mb-8">
               Book a free 20-minute strategy call. We’ll map out your current donor retention situation, show you a live demonstration, and tell you honestly if Tazka is the right fit.
             </p>
 
@@ -192,7 +192,7 @@ export default function ContactForm() {
                     Barakallahu Feek!
                   </h4>
                   <p className="text-xs text-text-md max-w-sm mx-auto leading-relaxed">
-                    Message sent successfully. Ahmed, our onboarding team will reach out to you within 24 hours to schedule your free diagnostic consultation.
+                    Message sent successfully, {formData.name}. Our onboarding team will reach out to you within 24 hours to schedule your free diagnostic consultation.
                   </p>
                   <button
                     onClick={() => {

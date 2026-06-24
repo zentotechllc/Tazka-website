@@ -9,8 +9,8 @@ export default function ImplementationRoadmap() {
     {
       label: "Phase 1: Kickoff & Import",
       days: "Days 1 — 4",
-      title: "Secure gateway binding & database synthesis",
-      descr: "Our engineers bind securely to your standard processing engine (Stripe, Authorize.Net, or CardConnect) using passwordless tokens. We clean, de-duplicate, and organize your donor profile history, identifying active monthly commitments vs. lapsed supporters.",
+      title: "PCI-compliant gateway integration & secure database synthesis",
+      descr: "Our engineers bind securely to your standard processing engine (Stripe, Authorize.Net, or CardConnect) using PCI-compliant, secure API tokens. We clean, de-duplicate, and organize your donor profile history, identifying active monthly commitments vs. lapsed supporters.",
       owner: "Tazka (95%) / You (5% Link Signoff)",
       deliverable: "Secure Tazka Sandbox created with fully cleaned donor files synced.",
       icon: <Layers className="w-5 h-5 text-brand-teal" />,
@@ -36,7 +36,7 @@ export default function ImplementationRoadmap() {
   ];
 
   return (
-    <section className="py-24 bg-bg-deep relative overflow-hidden select-none">
+    <section className="py-36 lg:py-40 bg-bg-deep relative overflow-hidden select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
@@ -47,7 +47,7 @@ export default function ImplementationRoadmap() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-text-hi leading-none mb-4">
             From onboarding to live in <em className="text-brand-teal">two weeks.</em>
           </h2>
-          <p className="text-text-md text-sm sm:text-base">
+          <p className="text-text-md text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">
             We manage 95% of the setup work. You review and click approve. The timeline is fast, transparent, and completely automated.
           </p>
         </div>

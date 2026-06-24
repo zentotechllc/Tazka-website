@@ -6,7 +6,7 @@ export default function Hero() {
   const [activeDonors, setActiveDonors] = useState([
     { initials: "AH", color: "#0F5E46", bg: "#E6F4EA", name: "Ahmed Hassan", status: "Active", amount: "$500", desc: "Sadaqah — 3 mins ago", tagClass: "text-green-800 bg-green-100" },
     { initials: "FK", color: "#1D4ED8", bg: "#EFF6FF", name: "Fatima Khan", status: "New", amount: "$150", desc: "Zakat — 11 mins ago", tagClass: "text-blue-800 bg-blue-100" },
-    { initials: "MA", color: "#A16207", bg: "#FEF3C7", name: "Mohammed Ali", status: "At Risk", amount: "$—", desc: "Lapsed last 6mo", tagClass: "text-amber-800 bg-amber-100" },
+    { initials: "MA", color: "#A16207", bg: "#FEF3C7", name: "Mohammed Ali", status: "At Risk", amount: "$300", desc: "Lapsed last 6mo", tagClass: "text-amber-800 bg-amber-100" },
   ]);
 
   const [counterDonor, setCounterDonor] = useState(820);
@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="absolute inset-0 dot-grid pointer-events-none opacity-40 [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,black_30%,transparent_80%)]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-template-columns lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Text and Marketing Layout */}
           <div className="lg:col-span-7 flex flex-col justify-center">
@@ -77,7 +77,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-text-md text-base sm:text-lg max-w-xl leading-relaxed mb-8"
+              className="text-text-md text-lg sm:text-xl md:text-2xl max-w-2xl leading-relaxed mb-8"
             >
               Muslim nonprofits lose <span className="text-text-hi font-semibold">60–70% of donors</span> every year — not from lack of generosity, but from lack of follow-up. Tazka is the retention engine built specifically for your community.
             </motion.p>

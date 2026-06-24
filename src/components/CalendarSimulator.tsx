@@ -52,7 +52,7 @@ export default function CalendarSimulator() {
   const current = phasesContent[phase];
 
   return (
-    <section id="simulator" className="py-24 bg-bg-mid relative overflow-hidden">
+    <section id="simulator" className="py-36 lg:py-40 bg-bg-mid relative overflow-hidden">
       
       {/* Decorative vector background design glows */}
       <div className="absolute top-[30%] left-[-150px] w-96 h-96 rounded-full bg-radial from-brand-teal/5 to-transparent blur-3xl pointer-events-none" />
@@ -67,24 +67,33 @@ export default function CalendarSimulator() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-text-hi leading-none mb-4">
             Automated <em className="text-brand-teal">lunar campaign cycles.</em>
           </h2>
-          <p className="text-text-md text-sm sm:text-base">
+          <p className="text-text-md text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">
             The Hijri calendar shifts 11 days every solar year. Tazka’s automated engine tracks the lunar cycles nightly so your mosque campaigns fire precisely when the blessings begin — without any manual work.
           </p>
 
           {/* Interactive Navigation Menu Selector */}
-          <div className="flex flex-wrap justify-center gap-2 mt-8 max-w-xl mx-auto bg-bg-deep border border-border-subtle p-1 rounded-xl">
+          <div className="flex flex-wrap justify-center gap-2 mt-8 max-w-xl mx-auto bg-bg-deep border border-border-subtle p-1 rounded-xl relative">
             {(["offseason", "ramadan", "last10", "dhulhijjah"] as const).map((tab) => (
-              <button
+              <motion.button
                 key={tab}
                 onClick={() => setPhase(tab)}
-                className={`flex-1 px-4 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className={`flex-1 px-4 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all cursor-pointer relative z-10 ${
                   phase === tab
-                    ? "bg-brand-teal text-white font-semibold shadow-md shadow-brand-teal/10"
-                    : "text-text-md hover:text-text-hi hover:bg-border-subtle/50"
+                    ? "text-white font-semibold"
+                    : "text-text-md hover:text-text-hi"
                 }`}
               >
+                {phase === tab && (
+                  <motion.div
+                    layoutId="activeLunarTab"
+                    className="absolute inset-0 bg-brand-teal rounded-lg shadow-md shadow-brand-teal/15 -z-10"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
                 {tab === "offseason" ? "Off-Season" : tab === "ramadan" ? "Ramadan" : tab === "last10" ? "Last 10 Nights" : "Dhul Hijjah"}
-              </button>
+              </motion.button>
             ))}
           </div>
         </div>

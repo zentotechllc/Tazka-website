@@ -53,7 +53,7 @@ export default function MetricsShowcase() {
                   <ArrowUpRight className="w-3.5 h-3.5 text-text-lo group-hover:text-brand-teal group-hover:translate-x-0.5 group-hover:-translate-y-0.5 opacity-0 group-hover:opacity-100 transition-all" />
                 </div>
 
-                <p className="text-sm text-text-md leading-relaxed">
+                <p className="text-sm sm:text-base text-text-md leading-relaxed">
                   {feat.desc}
                 </p>
               </div>

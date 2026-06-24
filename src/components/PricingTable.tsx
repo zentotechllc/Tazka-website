@@ -56,7 +56,7 @@ export default function PricingTable() {
   ];
 
   return (
-    <section id="pricing" className="py-24 bg-bg-mid relative select-none">
+    <section id="pricing" className="py-36 lg:py-40 bg-bg-mid relative select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Section */}
@@ -67,7 +67,7 @@ export default function PricingTable() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-text-hi leading-none mb-4">
             Flat fee subscription. <em className="text-brand-teal">Never a cut.</em>
           </h2>
-          <p className="text-text-md text-sm sm:text-base">
+          <p className="text-text-md text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">
             We charge a fixed monthly fee. We never take a percentage of your donations — because donor generosity belongs 100% to your cause.
           </p>
         </div>

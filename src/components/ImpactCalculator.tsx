@@ -8,11 +8,12 @@ export default function ImpactCalculator() {
 
   // Core calculations
   const lostAnnualBaseline = annualDonations * (1 - retentionRate / 100);
-  const tazkaSecured = annualDonations * 0.78;
-  const netSavingsGain = Math.max(0, tazkaSecured - (annualDonations * (retentionRate / 100)));
+  const targetRetention = Math.max(0.78, Math.min(0.95, (retentionRate / 100) + 0.08));
+  const tazkaSecured = annualDonations * targetRetention;
+  const netSavingsGain = Math.max(annualDonations * 0.05, tazkaSecured - (annualDonations * (retentionRate / 100)));
 
   return (
-    <section id="calculator" className="py-24 relative overflow-hidden bg-bg-deep select-none">
+    <section id="calculator" className="py-36 lg:py-40 relative overflow-hidden bg-bg-deep select-none">
       {/* Decorative background glows */}
       <div className="absolute right-[-100px] top-[10%] w-[350px] h-[350px] rounded-full bg-radial from-brand-teal/5 to-transparent blur-3xl pointer-events-none" />
 
@@ -26,7 +27,7 @@ export default function ImpactCalculator() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-text-hi leading-none mb-4">
             Calculate your donor <em className="text-brand-teal">retention leakage.</em>
           </h2>
-          <p className="text-text-md text-sm sm:text-base">
+          <p className="text-text-md text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto">
             Most nonprofits don't realize they lose 65% of their donors every single year. Use our interactive estimator to visualize what you are losing compared to what Tazka secures.
           </p>
         </div>
@@ -135,7 +136,7 @@ export default function ImpactCalculator() {
               <div className="mb-6">
                 <span className="text-xs uppercase font-bold tracking-wider text-brand-teal flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-brand-teal animate-pulse" />
-                  Secured with Tazka (78% Retention)
+                  Secured with Tazka ({Math.round(targetRetention * 100)}% Retention)
                 </span>
                 <div className="text-3xl font-serif text-brand-teal mt-1 font-bold">
                   ${tazkaSecured.toLocaleString(undefined, { maximumFractionDigits: 0 })}

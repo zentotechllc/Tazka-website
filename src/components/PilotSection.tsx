@@ -9,42 +9,44 @@ export default function PilotSection() {
   };
 
   return (
-    <section id="pilot" className="py-24 bg-bg-deep relative overflow-hidden">
+    <section id="pilot" className="py-36 lg:py-40 bg-brand-teal-dk relative overflow-hidden text-white">
       
       {/* Absolute glow design layer */}
-      <div className="absolute bottom-[-150px] right-[-100px] w-96 h-96 rounded-full bg-radial from-brand-teal/5 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute bottom-[-150px] right-[-100px] w-96 h-96 rounded-full bg-radial from-brand-teal/10 to-transparent blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center max-w-5xl mx-auto">
           
           {/* Left panel narrative */}
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-brand-teal block">
+            <span className="text-xs font-bold uppercase tracking-widest text-brand-saffron block">
               Flagship Pilot Partner
             </span>
-            <h2 className="text-3xl sm:text-4xl font-serif text-text-hi leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-serif text-white leading-tight">
               Muslim Youth Central,<br />
-              <em className="text-brand-teal">Columbus, Ohio.</em>
+              <em className="text-emerald-300 not-italic">Columbus, Ohio.</em>
             </h2>
-            <p className="text-text-md text-base leading-relaxed">
+            <p className="text-emerald-50/90 text-lg sm:text-xl md:text-2xl leading-relaxed">
               MYC has been building an expansive youth community center on Sunbury Road since 2019 — $2.7M invested, and $2M remaining to raise. After years of exhausting campaign-to-campaign fundraising cycles with zero systematic follow-ups, they partnered with Tazka as our flagship launch pilot.
             </p>
-            <div className="border-l-[3px] border-brand-teal pl-5 my-6">
-              <blockquote className="text-sm font-serif text-text-hi italic leading-relaxed">
+            <div className="border-l-[3px] border-brand-saffron pl-5 my-6">
+              <blockquote className="text-sm font-serif text-white italic leading-relaxed">
                 "We had hundreds of generous donors from our annual dinners, but we kept forgetting to keep them updated on milestones. Tazka changed everything within weeks of linking."
               </blockquote>
-              <cite className="text-xs font-bold text-text-lo tracking-widest uppercase mt-2 block not-italic">
+              <cite className="text-xs font-bold text-emerald-200/80 tracking-widest uppercase mt-2 block not-italic">
                 — Imam Jamil Shakir · MYC Columbus, OH
               </cite>
             </div>
-            <a
+            <motion.a
               href="#contact"
               onClick={handleScrollToContact}
-              className="btn-teal inline-flex items-center gap-2 bg-brand-teal hover:bg-brand-teal-dk text-white font-bold uppercase tracking-wider text-xs px-6 py-4 rounded-xl transition-all shadow-md active:scale-95"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 bg-[#FAF9F6] hover:bg-[#FAF9F6]/90 text-brand-teal-dk font-bold uppercase tracking-wider text-xs px-6 py-4 rounded-xl transition-all shadow-lg cursor-pointer"
             >
               Analyze your current retention
-              <ArrowUpRight className="w-4 h-4" />
-            </a>
+              <ArrowUpRight className="w-4 h-4 text-brand-teal-dk" />
+            </motion.a>
           </div>
 
           {/* Right panel interactive stats card */}

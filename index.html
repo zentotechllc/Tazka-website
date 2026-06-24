@@ -3,7 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>Tazka | Premium Donor Retention Platform for Muslim Nonprofits</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://tazka.org/#organization",
+          "name": "Tazka",
+          "url": "https://tazka.org",
+          "logo": "https://tazka.org/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@tazka.org",
+            "contactType": "customer support"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://tazka.org/#product",
+          "name": "Tazka",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "499.00",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "499.00",
+              "priceCurrency": "USD",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": "1",
+                "unitCode": "MON"
+              }
+            }
+          },
+          "description": "Premium donor retention platform with automated lunar campaign cycles and automated credit card failure recovery pipelines built specifically for US Muslim nonprofits.",
+          "publisher": {
+            "@id": "https://tazka.org/#organization"
+          },
+          "featureList": [
+            "Lunar Nurturing Pipelines",
+            "Automated Lunar Campaign Cycles",
+            "PCI-Compliant Credit Card Recovery Pipelines",
+            "Flat-fee Subscription Pricing"
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://tazka.org/#showcase",
+          "name": "Tazka Success Case Studies",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Muslim Youth Central (Columbus, OH)",
+                "description": "Finishing a $4.7M community building through systematic Lunar Nurturing Pipelines. Achieved +43% YoY recurring donations and 78% retention."
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Noor Islamic Academy (Chicago, IL)",
+                "description": "Stabilizing monthly orphan & student sponsorships via automated designation loops. Recovered $18.5k in failed card sponsorship pipelines."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

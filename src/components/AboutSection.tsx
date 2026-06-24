@@ -27,7 +27,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="py-36 lg:py-40 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           
@@ -91,11 +91,11 @@ export default function AboutSection() {
               We watched a community center wait <em className="text-brand-teal">seven years.</em>
             </h2>
 
-            <p className="text-text-md text-base sm:text-lg leading-relaxed mb-5">
-              In 2019, Muslim Youth Central broke ground on a community center in Columbus, Ohio. By 2026, it was still half-finished — not from lack of will, but from lack of a systematic donor retention program. We built Tazka to solve this once and for all.
+            <p className="text-text-md text-lg sm:text-xl md:text-2xl leading-relaxed mb-6">
+              In 2019, Muslim Youth Central broke ground on a community center in Columbus, Ohio. For nearly seven years, the structure sat half-finished—not from lack of community will, but from lack of a systematic donor retention program. By implementing Tazka, they stabilized their supporter base, secured the final funding rounds, and are completing construction. We built Tazka to solve this once and for all.
             </p>
 
-            <p className="text-text-md text-base sm:text-lg leading-relaxed mb-6">
+            <p className="text-text-md text-lg sm:text-xl md:text-2xl leading-relaxed mb-8">
               Tazka comes from the Arabic root <strong>ز-ك-و</strong> — the same root as{" "}
               <em className="text-brand-teal not-italic">Zakat</em> and{" "}
               <em className="text-brand-teal not-italic">Tazkiyah</em>. To purify. To grow. We built it for primary caretakers, volunteers, and organizations doing the most vital community work, who are left completely underserved by standard modern commercial CRM systems.
